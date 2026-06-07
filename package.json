@@ -1,0 +1,48 @@
+{
+  "name": "opencode-deadline-pressure",
+  "version": "0.1.0",
+  "description": "OpenCode plugin that warns agents about time budget consumption and nudges handoff",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "test:cov": "vitest run --coverage"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "deadline-pressure"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.14.48",
+    "@types/node": "^22.0.0",
+    "@vitest/coverage-v8": "^4.1.5",
+    "typescript": "^5.8.0",
+    "vitest": "^4.1.5"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.2.0"
+  },
+  "author": "joeyism",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeyism/opencode-deadline-pressure.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joeyism/opencode-deadline-pressure/issues"
+  },
+  "homepage": "https://github.com/joeyism/opencode-deadline-pressure#readme"
+}
